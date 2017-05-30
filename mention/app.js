@@ -4,7 +4,7 @@ const fileConfig = require(`${__dirname}/config.json`);
  
 bot.on('message', msg => {
   for (x in fileConfig.mentionable) {
-    if (msg.content.toLowerCase().indexOf(fileConfig.mentionable[x].toLowerCase()) != -1)  {
+    if (msg.content.toLowerCase().indexOf(fileConfig.mentionable[x].toLowerCase()) != -1) {
       console.log(`\nOne of your mentionable words was triggered by ${msg.author.username}#${msg.author.discriminator} (${msg.author.id}) at ${msg.createdAt}.\nTheir message: "${msg.cleanContent}"\n`)
       break;
     }
