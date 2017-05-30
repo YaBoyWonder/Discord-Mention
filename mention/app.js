@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const fileConfig = require(`${__dirname}/config.json`);
-
+ 
 bot.on('message', msg => {
   for (x in fileConfig.mentionable) {
     if (msg.content.toLowerCase().indexOf(fileConfig.mentionable[x].toLowerCase()) != -1) {
