@@ -20,6 +20,7 @@ bot.on('ready', () => {
   }
 });
 
+
 bot.login(fileConfig.token)
   .catch(err => {
     console.log(`\nToken file wasn't configured correctly:\n${err}\n`);
