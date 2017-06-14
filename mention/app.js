@@ -10,7 +10,7 @@ bot.on('message', msg => {
     }
   }
 });
-
+ 
 bot.on('ready', () => {
   console.log(`Successfully logged in as ${bot.user.username}#${bot.user.discriminator} (${bot.user.id}).`);
 
